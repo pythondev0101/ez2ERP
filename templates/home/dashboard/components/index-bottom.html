@@ -1,0 +1,219 @@
+{% load static %}
+{% load sass_tags %}
+<div class="col-xl-4 col-lg-12 col-md-6 des-xl-50 box-col-6 box-col-6">
+  <div class="card statistics-sec">
+    <div class="card-header">
+      <h5>Statistics</h5>
+      <div class="card-header-right">
+        <ul class="setting-option">
+          <li>
+            <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code font-primary"></i></li>
+          <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+          <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+          <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+          <li><i class="icofont icofont-error close-card font-primary"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body chart-block p-0">
+      <div id="chart-statistics"></div>
+      <div class="code-box-copy">
+        <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#statistics-sec" title="Copy"><i
+            class="icofont icofont-copy-alt"></i></button>
+        <pre><code class="language-html" id="statistics-sec">&lt;div class="card statistics-sec"&gt;
+&lt;div class="card-header"&gt;
+&lt;h5&gt;Statistics&lt;/h5&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;
+&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-body chart-block p-0"&gt;
+&lt;div id="chart-statistics"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-footer"&gt;
+&lt;div class="statistics-details text-center"&gt;
+&lt;table class="table table-bordernone"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;span&gt;Emails&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;h6&gt; &lt;i class="fa fa-arrow-up font-primary me-1"&gt; &lt;/i&gt;&lt;span class="font-primary me-1"&gt;22 &lt;/span&gt;Growth in Last Week&lt;/h6&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span&gt;8457&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;span&gt;Events&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;h6&gt;&lt;i class="fa fa-arrow-down me-1 font-secondary"&gt;&lt;/i&gt;&lt;span class="font-secondary me-1"&gt;8&lt;/span&gt;in Last Week&lt;/h6&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;span&gt;16&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;span&gt;Visits&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;h6&gt;&lt;i class="fa fa-arrow-up font-info me-1"&gt;&lt;/i&gt;&lt;span class="font-info me-1"&gt;22&lt;/span&gt;Great Growth in Last Week&lt;/h6&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;span&gt;8457&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="statistics-details text-center">
+        <table class="table table-bordernone">
+          <tbody>
+            <tr>
+              <td><span>Emails</span></td>
+              <td>
+                <h6> <i class="fa fa-arrow-up font-primary me-1"> </i><span class="font-primary me-1">22 </span>Growth
+                  in Last Week</h6>
+              </td>
+              <td><span>8457</span></td>
+            </tr>
+            <tr>
+              <td><span>Events</span></td>
+              <td>
+                <h6><i class="fa fa-arrow-down me-1 font-secondary"></i><span class="font-secondary me-1">8</span>in
+                  Last Week</h6>
+              </td>
+              <td><span>16</span></td>
+            </tr>
+            <tr>
+              <td><span>Visits</span></td>
+              <td>
+                <h6><i class="fa fa-arrow-up font-info me-1"></i><span class="font-info me-1">22</span>Great Growth in
+                  Last Week</h6>
+              </td>
+              <td><span>8457</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-4 col-md-6 des-xl-50 box-col-6">
+  <div class="card goal-overview-sec">
+    <div class="card-header">
+      <h5>Goal Overview</h5>
+      <div class="card-header-right">
+        <ul class="setting-option">
+          <li>
+            <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code font-primary"></i></li>
+          <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+          <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+          <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+          <li><i class="icofont icofont-error close-card font-primary"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body p-b-0 text-center">
+      <div class="goal-chart-block">
+        <div class="goal-overview-chart"></div>
+        <div class="highest-goal"><span>$3.9k</span>
+          <p>Highest</p>
+        </div>
+      </div>
+      <div class="code-box-copy">
+        <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#goal-view" title="Copy"><i
+            class="icofont icofont-copy-alt"></i></button>
+        <pre><code class="language-html" id="goal-view"> &lt;div class="card goal-overview-sec"&gt;
+&lt;div class="card-header"&gt;
+&lt;h5&gt;Goal Overview&lt;/h5&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;
+&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-body p-b-0 text-center"&gt;
+&lt;div class="goal-chart-block"&gt;
+&lt;div class="goal-overview-chart"&gt;&lt;/div&gt;
+&lt;div class="highest-goal"&gt;&lt;span&gt;$3.9k&lt;/span&gt;
+&lt;p&gt;Highest&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-footer"&gt;
+&lt;ul class="goal-details"&gt;
+&lt;li&gt;
+&lt;div class="complete-goal"&gt;
+&lt;h4&gt;65%&lt;/h4&gt;&lt;span&gt;Completed Goal&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="expected-goal"&gt;
+&lt;h4&gt;98%&lt;/h4&gt;&lt;span&gt;Our Expected Goal&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+    <div class="card-footer">
+      <ul class="goal-details">
+        <li>
+          <div class="complete-goal">
+            <h4>65%</h4><span>Completed Goal</span>
+          </div>
+        </li>
+        <li>
+          <div class="expected-goal">
+            <h4>98%</h4><span>Our Expected Goal</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="col-xl-4 col-md-6 des-xl-50 box-col-6">
+  <div class="card o-hidden help-sec">
+    <div class="card-header">
+      <div class="badge-main w-100">
+        <ul class="setting-option bg-transparent">
+          <li>
+            <div class="setting-badge light-badge"><i class="fa fa-cog"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code"></i></li>
+          <li><i class="icofont icofont-maximize full-card"></i></li>
+          <li><i class="icofont icofont-minus minimize-card"></i></li>
+          <li><i class="icofont icofont-refresh reload-card"></i></li>
+          <li><i class="icofont icofont-error close-card"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body p-0">
+      <div class="help-desk text-center">
+        <div class="help-profile">
+          <div class="round-animation"><i></i><i></i></div><img class="img-fluid img-100"
+            src="{% static 'assets/images/dashboard/mirage-delete.png' %}">
+        </div>
+        <h4 class="font-light">Have a any question</h4>
+        <p class="font-light">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p><a
+          class="btn btn-light" href="#" data-original-title="" title="">Ask Question</a>
+      </div>
+    </div>
+  </div>
+</div>

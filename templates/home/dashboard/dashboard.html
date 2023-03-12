@@ -1,0 +1,46 @@
+{% extends 'base.html' %}{% load static %}
+{% load sass_tags %}
+{% block css %}
+<!-- Plugins css start-->
+<link rel="stylesheet" type="text/css" href="{% sass_src 'assets/scss/vendors/animate.scss' %}">
+<link rel="stylesheet" type="text/css" href="{% sass_src 'assets/scss/vendors/chartist.scss' %}">
+<link rel="stylesheet" type="text/css" href="{% sass_src 'assets/scss/vendors/prism.scss' %}">
+<!-- Plugins css Ends-->
+{% endblock css %}
+{% block content %}
+<div class="page-body">
+  {% include 'layout/breadcrumb-dashboard.html' %}
+  <!-- Container-fluid starts-->
+  <div class="container-fluid default-dash">
+    <div class="row">
+      {% include 'home/dashboard/components/index-top.html' %}
+      {% include 'home/dashboard/components/index-middle.html' %}
+      {% include 'home/dashboard/components/index-bottom.html' %}
+    </div>
+  </div>
+  <!-- Container-fluid Ends-->
+</div>
+{% endblock content %}
+{% block scriptcontent %}
+<!-- Plugins JS start-->
+<script src="{% static 'assets/js/chart/chartjs/chart.min.js' %}"></script>
+<script src="{% static 'assets/js/chart/chartist/chartist.js' %}"></script>
+<script src="{% static 'assets/js/chart/chartist/chartist-plugin-tooltip.js' %}"></script>
+<script src="{% static 'assets/js/chart/morris-chart/raphael.js' %}"></script>
+<script src="{% static 'assets/js/chart/morris-chart/morris.js' %}"> </script>
+<script src="{% static 'assets/js/chart/morris-chart/prettify.min.js' %}"></script>
+<script src="{% static 'assets/js/chart/knob/knob.min.js' %}"></script>
+<script src="{% static 'assets/js/chart/apex-chart/apex-chart.js' %}"></script>
+<script src="{% static 'assets/js/chart/apex-chart/stock-prices.js' %}"></script>
+<script src="{% static 'assets/js/prism/prism.min.js' %}"></script>
+<script src="{% static 'assets/js/clipboard/clipboard.min.js' %}"></script>
+<script src="{% static 'assets/js/counter/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'assets/js/counter/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/counter/counter-custom.js' %}"></script>
+<script src="{% static 'assets/js/custom-card/custom-card.js' %}"></script>
+<script src="{% static 'assets/js/notify/bootstrap-notify.min.js' %}"></script>
+<script src="{% static 'assets/js/dashboard/default.js' %}"></script>
+<script src="{% static 'assets/js/notify/index.js' %}"></script>
+<script src="{% static 'assets/js/greeting.js' %}"></script>
+<!-- Plugins JS Ends-->
+{% endblock scriptcontent %}

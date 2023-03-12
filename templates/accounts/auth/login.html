@@ -1,0 +1,82 @@
+{% extends 'base-other-page.html' %}{% load static %}
+{% load sass_tags %}
+{% block css %}
+<!-- Plugins css start-->
+
+<!-- Plugins css Ends-->
+{% endblock css %}
+{% block content %}
+<section>
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-12 form-login">
+        <div class="login-card"><img class="img-fluid bg-img-cover"
+            src="{% static 'assets/images/login/login_bg.jpg' %}" alt="">
+          <form class="theme-form login-form " method="post">
+            <div class="login-header text-center">
+              <h4>Login</h4>
+              <h6>Welcome back! Log in to your account.</h6>
+              {% for message in messages %}
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                <div class="alert alert-success inverse alert-dismissible fade show" role="alert"><i
+                    class="icon-thumb-up alert-center"></i>
+                  <p>{{message}}</p>
+                  <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% else %}
+                <div class="alert alert-danger outline alert-dismissible fade show" role="alert"><i
+                    data-feather="thumbs-down"></i>
+                    <p>{{message}}</p>
+                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% csrf_token %}
+            {{form}}
+            <div class="form-group">
+              <label>Username</label>
+              <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
+                <input name="username" class="form-control" type="text" required="" placeholder="username">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
+                <input name="password" class="form-control" type="password" name="login[password]" required=""
+                  placeholder="*********">
+              </div>
+            </div>
+            <!-- <div class="form-group">
+              <div class="checkbox">
+                <input id="checkbox1" type="checkbox">
+                <label for="checkbox1">Remember password</label>
+              </div>
+            </div> -->
+            <div class="form-group">
+              <div class="row">
+                  <div class="col-6">
+                    <button class="btn btn-primary btn-block" type="submit" name="loginRedirect" value="loginSocial">Sign in to Social</button>
+                  </div>
+                  <div class="col-6">
+                    <button class="btn btn-primary btn-block" type="submit" name="loginRedirect" value="loginConsole">Sign in to Console</button>
+                  </div>
+              </div>
+            </div>
+            <p>Don't have account?<a class="ms-2" href="{% url 'signup' %}">Create Account </a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
+
+{% block scriptcontent %}
+<!-- Plugins JS start-->
+<script>
+  document.getElementById('id_username').value = 'test'
+  document.getElementById('id_password').value = 'testing@123'
+</script>
+<!-- Plugins JS Ends-->
+{% endblock scriptcontent %}

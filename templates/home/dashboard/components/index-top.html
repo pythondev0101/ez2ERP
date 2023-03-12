@@ -1,0 +1,280 @@
+{% load static %}
+{% load sass_tags %}
+<div class="col-xl-4 col-md-6 des-xl-50 box-col-6">
+  <div class="card profile-greeting">
+    <div class="card-decore">
+      <div class="main"><img class="img-fluid" src="{% static 'assets/images/dashboard/1.png' %}"
+          alt="Image description"></div>
+      <div class="dot dot1"></div>
+      <div class="dot dot2"> </div>
+      <div class="dot dot3"> </div>
+      <div class="dot dot4"></div>
+      <div class="cross cross1"> </div>
+      <div class="cross cross2"> </div>
+      <div class="cross cross3"> </div>
+    </div>
+    <div class="card-body">
+      <div class="media">
+        <ul class="setting-option bg-transparent">
+          <li>
+            <div class="setting-badge light-badge"><i class="fa fa-cog"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code"></i></li>
+          <li><i class="icofont icofont-maximize full-card"></i></li>
+          <li><i class="icofont icofont-minus minimize-card"></i></li>
+          <li><i class="icofont icofont-refresh reload-card"></i></li>
+          <li><i class="icofont icofont-error close-card"></i></li>
+        </ul>
+      </div>
+      <div class="greeting-user text-center">
+        <div>
+          <h1>Welcome </h1>
+          <h6>Congratulations! Allie Grater</h6>
+          <p>Have you seen our latest blog post? Why not head over there and give it a read? We're sure you'll love it!
+          </p><a class="btn btn-light" href="#" data-original-title="" title="">Check Update</a>
+        </div>
+      </div>
+    </div>
+    <canvas id="confetti"></canvas>
+  </div>
+</div>
+<div class="col-xl-4 col-md-6 des-xl-50 box-col-6">
+  <div class="card latest-update-sec">
+    <div class="card-header">
+      <h5>Latest Update</h5>
+      <div class="card-header-right">
+        <ul class="setting-option">
+          <li>
+            <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code font-primary"></i></li>
+          <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+          <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+          <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+          <li><i class="icofont icofont-error close-card font-primary"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body p-t-0">
+      <div id="chart-candle"></div>
+      <div class="update-block">
+        <div class="table-responsive">
+          <table class="table table-bordernone">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="update-widgets">
+                    <div class="icon bg-primary"><i class="fa fa-star"></i></div>
+                  </div>
+                </td>
+                <td> <span>Win best seller of the year award</span>
+                  <p>Company San Francisco</p>
+                </td>
+                <td>
+                  <p>34 minits ago</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="update-widgets">
+                    <div class="icon bg-secondary me-3"><i class="fa fa-check-circle"></i></div>
+                  </div>
+                </td>
+                <td> <span>Approved our product in checking</span>
+                  <p>Elisse joson,San francisco</p>
+                </td>
+                <td>
+                  <p>1 hour ago</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="code-box-copy">
+        <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#letest-update" title="Copy"><i
+            class="icofont icofont-copy-alt"></i></button>
+        <pre>                                          <code class="language-html" id="letest-update">&lt;div class="card latest-update-sec"&gt;
+&lt;div class="card-header"&gt;
+&lt;h5&gt;Latest Update&lt;/h5&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-body p-t-0"&gt;
+&lt;div id="chart-candle"&gt;&lt;/div&gt;
+&lt;div class="update-block"&gt;
+&lt;div class="table-responsive"&gt;
+&lt;table class="table table-bordernone"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;div class="update-widgets"&gt;
+&lt;div class="icon bg-primary"&gt;
+&lt;i class="fa fa-star"&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt; 
+&lt;span&gt;Win best seller of the year award&lt;/span&gt;
+&lt;p&gt;Company San Francisco&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;34 minits ago&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt; 
+&lt;td&gt; 
+&lt;div class="update-widgets"&gt;
+&lt;div class="icon bg-secondary me-3"&gt;&lt;i class="fa fa-check-circle"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt; &lt;span&gt;Approved our product in checking&lt;/span&gt;
+&lt;p&gt;Elisse joson,San francisco&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;1 hour ago&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-4 des-xl-100 box-col-12">
+  <div class="row">
+    <div class="col-xl-12 col-sm-6 des-xl-50 box-col-6">
+      <div class="card daily-earning-sec">
+        <div class="card-header">
+          <h5>Dailly Earning</h5>
+          <div class="card-header-right">
+            <ul class="setting-option">
+              <li>
+                <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+              </li>
+              <li><i class="view-html fa fa-code font-primary"></i></li>
+              <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+              <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+              <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+              <li><i class="icofont icofont-error close-card font-primary"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body p-t-0">
+          <h3 class="d-flex">$
+            <div class="counter">8,55,462</div>
+          </h3>
+          <div class="progress-gradient-fill">
+            <div class="progress sm-progress-bar">
+              <div class="progress-gradient-primary" role="progressbar" style="width: 80%" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="tag-section d-flex justify-content-between align-items-end">
+            <div class="tag-content d-flex"><i class="fa fa-arrow-up toprightarrow-primary"></i><span>78.21%</span>
+              <p>More than last year</p>
+            </div>
+            <div class="round-tag"><i class="fa fa-usd"></i></div>
+          </div>
+          <div class="code-box-copy">
+            <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#dailly-earning" title="Copy"><i
+                class="icofont icofont-copy-alt"></i></button>
+            <pre><code class="language-html" id="dailly-earning">&lt;div class="card daily-earning-sec"&gt;
+&lt;div class="card-header"&gt;
+&lt;h5&gt;Dailly Earning&lt;/h5&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;
+&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="card-body p-t-0"&gt;
+&lt;h3 class="d-flex"&gt;$&lt;div class="counter"&gt;8,55,462&lt;/div&gt;&lt;/h3&gt;
+&lt;div class="progress-gradient-fill"&gt;
+&lt;div class="progress sm-progress-bar"&gt; 
+&lt;div class="progress-gradient-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="tag-section d-flex justify-content-between align-items-end"&gt;
+&lt;div class="tag-content d-flex"&gt;&lt;i class="fa fa-arrow-up toprightarrow-primary"&gt;&lt;/i&gt;&lt;span&gt;78.21%&lt;/span&gt;
+&lt;p&gt;More than last year&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="round-tag"&gt;&lt;i class="fa fa-usd"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-12 col-sm-6 des-xl-50 box-col-6">
+      <div class="card total-events-sec">
+        <div class="card-header justify-content-between">
+          <h5>Total Events</h5>
+          <div class="center-content">
+            <p>last year events</p><span class="counter">5945</span>
+          </div>
+          <div class="card-header-right">
+            <ul class="setting-option">
+              <li>
+                <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+              </li>
+              <li><i class="view-html fa fa-code font-primary"></i></li>
+              <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+              <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+              <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+              <li><i class="icofont icofont-error close-card font-primary"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="apex-complain">
+            <div id="mix1"></div>
+          </div>
+          <div class="small-mix"></div>
+          <div class="code-box-copy">
+            <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#total-events" title="Copy"><i
+                class="icofont icofont-copy-alt"></i></button>
+            <pre><code class="language-html" id="total-events">&lt;div class="card total-events-sec"&gt;
+&lt;div class="card-header justify-content-between"&gt;
+&lt;h5&gt;Total Events&lt;/h5&gt;
+&lt;div class="center-content"&gt;
+&lt;p&gt;last year events&lt;/p&gt;
+&lt;span class="counter"&gt;5945&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;
+&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-body p-0"&gt;
+&lt;div class="apex-complain"&gt;
+&lt;div id="mix1"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="small-mix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,405 @@
+{% load static %}
+{% load sass_tags %}
+<div class="col-xl-4 col-lg-12 col-md-6 des-md-55 des-xl-55 xl-50 box-col-6">
+  <div class="card monthly-earning-sec">
+    <div class="card-header justify-content-between">
+      <h5>Quick Option</h5>
+      <div class="center-content">
+        <div class="center-content-left">
+          <p>Total transaction</p><span class="counter">66548400 </span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body p-t-0">
+      <div class="row options-main">
+        <div class="col-4">
+          <div class="option-box"><i class="icofont icofont-bill-alt txt-primary"></i>
+            <h5>25500</h5>
+            <h6>Cash On Hand</h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="option-box"><i class="icofont icofont-bank-alt txt-secondary"></i>
+            <h5>30000</h5>
+            <h6>Bank balance </h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="option-box"><i class="icofont icofont-mastercard txt-success"></i>
+            <h5>Mastercard</h5>
+            <h6>Credit card</h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="option-box"><i class="icofont icofont-trophy-alt txt-info"></i>
+            <h5>435.5</h5>
+            <h6>Total cashback</h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="option-box"><i class="icofont icofont-ticket txt-warning"></i>
+            <h5>Unlock 5</h5>
+            <h6>Coupans</h6>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="option-box"><i class="icofont icofont-maestro txt-danger"></i>
+            <h5>3500</h5>
+            <h6>Win Points</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-4 col-lg-12 col-md-6 des-md-45 xl-50 des-xl-45 box-col-6">
+  <div class="card dash-chat">
+    <div class="card-header pb-0">
+      <h5>Recent messages</h5>
+    </div>
+    <div class="card-body">
+      <div class="chat-box dashboard-chat">
+        <div class="chat">
+          <div class="media left-side-chat"><a href="/users_users_profile"><img
+                class="rounded-circle chat-user-img img-40 m-r-10" src="{% static 'assets/images/user/4.jpg' %}"
+                alt=""></a>
+            <div class="media-body">
+              <div class="message-main">
+                <p class="mb-0">Hi I am Alan,can you help me to find best admin?.</p>
+              </div>
+            </div>
+          </div>
+          <div class="media right-side-chat">
+            <div class="media-body text-right">
+              <div class="message-main">
+                <p class="pull-right">Sure, wingo is best admin for your project, you can it check<a
+                    href="https://themeforest.net/user/pixelstrap/portfolio"> Here</a></p>
+              </div>
+            </div><a href="/users_users_profile"><img class="rounded-circle chat-user-img img-40 m-l-10"
+                src="{% static 'assets/images/user/5.jpg' %}" alt=""></a>
+          </div>
+          <div class="media m-t-10 left-side-chat"><a href="/users_users_profile"><img
+                class="rounded-circle chat-user-img img-40 m-r-10" src="{% static 'assets/images/user/4.jpg' %}"
+                alt=""></a>
+            <div class="media-body">
+              <div class="message-main">
+                <p>I checked it's nice theme, Thanks man.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="media chat-footer bg-primary"><a href="/users_users_profile"><img class="img-fluid imogi"
+            src="{% static 'assets/images/smiley.png' %}" alt=""></a>
+        <div class="media-body">
+          <input class="form-control" type="text" placeholder="Type your message" required="">
+        </div><a class="d-flex" href="#"><i data-feather="fast-forward"> </i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-4 col-lg-12 col-md-6 des-xl-50 xl-40 box-col-6">
+  <div class="card pro-valuation-sec">
+    <div class="card-header pb-0">
+      <h5>Product Valuation</h5>
+      <div class="card-header-right">
+        <ul class="setting-option">
+          <li>
+            <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code font-primary"></i></li>
+          <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+          <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+          <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+          <li><i class="icofont icofont-error close-card font-primary"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body py-0">
+      <div id="valuation-chart"></div>
+      <div class="code-box-copy">
+        <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#product-valuation" title="Copy"><i
+            class="icofont icofont-copy-alt"></i></button>
+        <pre><code class="language-html" id="product-valuation">&lt;div class="card pro-valuation-sec"&gt;
+&lt;div class="card-header pb-0"&gt;
+&lt;h5&gt;Product Valuation&lt;/h5&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-body py-0"&gt;
+&lt;div id="valuation-chart"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-3 col-md-6 des-xl-50 col-lg-6 col-md-6 col-sm-6 xl-30 box-col-6 des-order-2">
+  <div class="card profile-sec">
+    <div class="card-header pb-0">
+      <h5>Profile</h5>
+      <div class="card-header-right">
+        <ul class="setting-option">
+          <li>
+            <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code font-primary"></i></li>
+          <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+          <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+          <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+          <li><i class="icofont icofont-error close-card font-primary"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body p-t-0">
+      <div class="user-details-main">
+        <div class="user-img"><img class="rounded-circle" src="{% static 'assets/images/dashboard/profile_img.png' %}"
+            alt="Card image cap"><span class="badge flat-badge-primary">New</span></div>
+        <div class="user-detail"><a href="/users_users_profile"><span>Emay Walter</span></a>
+          <p>Mahager</p>
+        </div>
+      </div>
+      <div class="user-content">
+        <div class="small-bar">
+          <div class="small-chart1 flot-chart-container"></div>
+        </div>
+        <div class="user-content-right"><span>+26%</span>
+          <p>Productivity </p>
+        </div>
+      </div>
+      <div class="code-box-copy">
+        <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#profile-sec" title="Copy"><i
+            class="icofont icofont-copy-alt"></i></button>
+        <pre><code class="language-html" id="profile-sec">&lt;div class="card profile-sec"&gt;
+&lt;div class="card-header pb-0"&gt;&lt;h5&gt;Profile&lt;/h5&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-body p-t-0"&gt;
+&lt;div class="user-details-main"&gt;
+&lt;div class="user-img"&gt;&lt;img class="rounded-circle" src="{% static 'assets/images/dashboard/profile_img.png' %}" alt="Card image cap"/&gt;&lt;span class="badge flat-badge-primary"&gt;New&lt;/span&gt;&lt;/div&gt;
+&lt;div class="user-detail"&gt;&lt;a href="/users_users_profile' %}"&gt;&lt;span&gt;Emay Walter&lt;/span&gt;&lt;/a&gt;
+&lt;p&gt;Mahager&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="user-content"&gt;
+&lt;div class="small-bar"&gt;
+&lt;div class="small-chart1 flot-chart-container"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="user-content-right"&gt;&lt;span&gt;+26%&lt;/span&gt;
+&lt;p&gt;Productivity&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-6 des-xl-100 xl-100 box-col-12 deals-sec">
+  <div class="card">
+    <div class="card-body">
+      <div class="best-dealer-table responsive-tbl">
+        <div class="item">
+          <div class="table-responsive product-list">
+            <table class="table table-bordernone">
+              <thead>
+                <tr>
+                  <th>Deals</th>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Projects</th>
+                  <th>Country</th>
+                  <th>Currency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>
+                    <div class="t-title d-inline-block align-middle"><a href="/users_users_profile"><img
+                          class="img-40 m-r-15 rounded-circle align-top"
+                          src="{% static 'assets/images/dashboard/p-1.png' %}" alt="" data-original-title=""
+                          title=""></a>
+                      <div class="status-circle bg-primary"></div>
+                      <div class="d-inline-block"><span>Ossim keter</span>
+                        <p>2019</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>16 August</td>
+                  <td>Graden</td>
+                  <td><i class="flag-icon flag-icon-gb"></i></td>
+                  <td><span class="label">$1,58,652 </span></td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>
+                    <div class="t-title d-inline-block align-middle"><a href="/users_users_profile"><img
+                          class="img-40 m-r-15 rounded-circle align-top"
+                          src="{% static 'assets/images/dashboard/p-2.png' %}" alt="" data-original-title=""
+                          title=""></a>
+                      <div class="status-circle bg-primary"></div>
+                      <div class="d-inline-block"><span>Venter loren</span>
+                        <p>2018</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>21 September</td>
+                  <td>Business Hub</td>
+                  <td><i class="flag-icon flag-icon-us"></i></td>
+                  <td><span class="label">$95,025 </span></td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>
+                    <div class="t-title d-inline-block align-middle"><a href="/users_users_profile"><img
+                          class="img-40 m-r-15 rounded-circle align-top"
+                          src="{% static 'assets/images/dashboard/p-3.png' %}" alt="" data-original-title=""
+                          title=""></a>
+                      <div class="status-circle bg-primary"></div>
+                      <div class="d-inline-block"><span>Fran loain</span>
+                        <p>2019</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>06 March</td>
+                  <td>Water Park</td>
+                  <td><i class="flag-icon flag-icon-za"></i></td>
+                  <td><span class="label">$90,155 </span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xl-3 col-md-6 des-xl-50 xl-30 col-lg-6 col-md-6 col-sm-6 box-col-6 des-order-1">
+  <div class="card social-review-sec">
+    <div class="card-header">
+      <h5>Social Review</h5>
+      <div class="card-header-right">
+        <ul class="setting-option">
+          <li>
+            <div class="setting-badge"><i class="fa fa-spin fa-cog font-primary"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code font-primary"></i></li>
+          <li><i class="icofont icofont-maximize full-card font-primary"></i></li>
+          <li><i class="icofont icofont-minus minimize-card font-primary"></i></li>
+          <li><i class="icofont icofont-refresh reload-card font-primary"></i></li>
+          <li><i class="icofont icofont-error close-card font-primary"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body p-t-0 p-b-0 social-main">
+      <div class="social-review-content">
+        <h5 class="counter">6895</h5>
+        <div class="star-sec-main">
+          <h6 class="mb-0">You got +65%</h6>
+          <ul class="star-sec">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <p>More reviews than last week</p>
+      </div>
+      <ul class="reviewer-profile">
+        <li><a href="/users_users_profile"><img class="rounded-circle"
+              src="{% static 'assets/images/dashboard/social/1.png' %}" alt="Card image cap"></a></li>
+        <li><a href="/users_users_profile"><img class="rounded-circle"
+              src="{% static 'assets/images/dashboard/social/2.png' %}" alt="Card image cap"></a></li>
+        <li><a href="/users_users_profile"><img class="rounded-circle"
+              src="{% static 'assets/images/dashboard/social/3.png' %}" alt="Card image cap"></a></li>
+        <li><a href="/users_users_profile"><img class="rounded-circle"
+              src="{% static 'assets/images/dashboard/social/4.png' %}" alt="Card image cap"></a></li>
+        <li><a href="/users_users_profile"><img class="rounded-circle"
+              src="{% static 'assets/images/dashboard/social/5.png' %}" alt="Card image cap"></a></li>
+      </ul>
+      <ul class="review-details">
+        <li>
+          <div class="left-review"><span class="counter">6521</span>
+            <p>5 star review</p>
+          </div>
+        </li>
+        <li>
+          <div class="right-review"><span class="counter">0374</span>
+            <p>4 start review</p>
+          </div>
+        </li>
+      </ul>
+      <div class="code-box-copy">
+        <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#social-review" title="Copy"><i
+            class="icofont icofont-copy-alt"></i></button>
+        <pre><code class="language-html" id="social-review">&lt;div class="card social-review-sec"&gt;
+&lt;div class="card-header"&gt;
+&lt;h5&gt;Social Review&lt;/h5&gt;
+&lt;div class="card-header-right"&gt;
+&lt;ul class="setting-option"&gt;
+&lt;li&gt;&lt;div class="setting-badge"&gt;&lt;i class="fa fa-spin fa-cog font-primary"&gt;&lt;/i&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="card-body p-t-0 p-b-0 social-main"&gt;
+&lt;div class="social-review-content"&gt;
+&lt;h5 class="counter"&gt;6895&lt;/h5&gt;
+&lt;div class="star-sec-main"&gt;
+&lt;h6 class="mb-0"&gt;You got +65%&lt;/h6&gt;
+&lt;ul class="star-sec"&gt;
+&lt;li&gt;&lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;&lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;More reviews than last week&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class="reviewer-profile"&gt;
+&lt;li&gt;&lt;a href="/users_users_profile' %}"&gt;&lt;img class="rounded-circle" src="{% static 'assets/images/dashboard/social/1.png' %}" alt="Card image cap"/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/users_users_profile' %}"&gt;&lt;img class="rounded-circle" src="{% static 'assets/images/dashboard/social/2.png' %}" alt="Card image cap"/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/users_users_profile' %}"&gt;&lt;img class="rounded-circle" src="{% static 'assets/images/dashboard/social/3.png' %}" alt="Card image cap"/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/users_users_profile' %}"&gt;&lt;img class="rounded-circle" src="{% static 'assets/images/dashboard/social/4.png' %}" alt="Card image cap"/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/users_users_profile' %}"&gt;&lt;img class="rounded-circle" src="{% static 'assets/images/dashboard/social/5.png' %}" alt="Card image cap"/&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="review-details"&gt;
+&lt;li&gt;
+&lt;div class="left-review"&gt;&lt;span class="counter"&gt;6521&lt;/span&gt;
+&lt;p&gt;5 star review&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="right-review"&gt;&lt;span class="counter"&gt;0374&lt;/span&gt;
+&lt;p&gt;4 start review&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</div>

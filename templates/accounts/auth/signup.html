@@ -1,0 +1,76 @@
+{% extends 'base-other-page.html' %}{% load static %}
+{% load sass_tags %}
+{% block css %}
+<!-- Plugins css start-->
+
+<!-- Plugins css Ends-->
+{% endblock css %}
+{% block content %}
+{% load static %}
+{% load sass_tags %}
+<section>
+  <div class="container-fluid p-0">
+    <div class="row m-0">
+      <div class="col-12 p-0 form-login">
+        <div class="login-card"><img class="img-fluid bg-img-cover"
+            src="{% static 'assets/images/login/login_bg.jpg' %}" alt="">
+          <form class="theme-form login-form" method="post">
+            <div class="login-header text-center">
+              <h4>Create your account</h4>
+              <h6>Enter your personal details to create account</h6>
+              {% for message in messages %}
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                <div class="alert alert-success inverse alert-dismissible fade show" role="alert"><i
+                    class="icon-thumb-up alert-center"></i>
+                  <p>{{message}}</p>
+                  <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% else %}
+                <div class="alert alert-danger outline alert-dismissible fade show" role="alert"><i
+                    data-feather="thumbs-down"></i>
+                    <p>{{message}}</p>
+                    <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% csrf_token %}
+            <div class="form-group">
+              <label>Your Name</label>
+              <div class="small-group">
+                <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
+                  <input name="fname" class="form-control" type="text" required="" placeholder="Fist Name">
+                </div>
+                <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
+                  <input name="lname" class="form-control" type="text" required="" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Username</label>
+              <div class="input-group"><span class="input-group-text"><i class="icon-email"></i></span>
+                <input name="username" class="form-control" type="text" required="" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
+                <input name="password" class="form-control" type="password" required="" placeholder="*********">
+              </div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+            </div>
+            <p>Already have an account?<a class="ms-2" href="{% url 'login' %}">Sign in</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
+{% block scriptcontent %}
+<!-- Plugins JS start-->
+
+<!-- Plugins JS Ends-->
+{% endblock scriptcontent %}
