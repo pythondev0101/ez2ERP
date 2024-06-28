@@ -1,0 +1,32 @@
+{% extends 'base.html' %}{% load static %}
+{% load sass_tags %}
+{% block content %}
+<div class="page-body">
+  {% include 'layout/breadcrumb.html' %}
+
+  <!-- Container-fluid starts-->
+  <div class="container-fluid">
+    <div class="edit-profile">
+      {% for message in messages %}
+      {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+      <div class="alert alert-success inverse alert-dismissible fade show" role="alert"><i
+          class="icon-thumb-up alert-center"></i>
+        <p>{{message}}</p>
+        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% else %}
+      <div class="alert alert-danger outline alert-dismissible fade show" role="alert"><i
+          data-feather="thumbs-down"></i>
+          <p>{{message}}</p>
+          <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endif %}
+    {% endfor %}
+      <div class="row">
+        {% include 'accounts/profile/components/profile_user.html' %}
+        {% include 'accounts/profile/components/profile_edit.html' %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

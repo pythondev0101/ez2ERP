@@ -1,0 +1,63 @@
+{% load static %}
+{% load sass_tags %}
+<div class="col-xl-4">
+  <div class="card">
+    <div class="card-header pb-0">
+      <h4 class="card-title mb-0">My Profile</h4>
+      <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i
+            class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i
+            class="fe fe-x"></i></a></div>
+    </div>
+    <div class="card-body">
+      <form class="needs-validation" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="update_what" value="USER"/>
+        <div class="row mb-2">
+          <div class="profile-title">
+            <div class="media"> <img class="img-70 rounded-circle" alt="" src="{% static 'assets/images/user/7.jpg' %}">
+              <div class="media-body">
+                <h3 class="mb-1 f-20 txt-primary">{{user.profile.name}}</h3>
+                <p class="f-12">
+                  {% if user.profile.is_business_owner %}
+                    Owner
+                  {% else %}
+                    Staff
+                  {% endif%}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% for field, error in profile_user_form.errors.items %}
+          <div class="alert alert-danger outline alert-dismissible fade show" role="alert">
+              <p>{{field|upper}} {{error.as_text}}</p>
+              <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i
+            class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i
+            class="fe fe-x"></i></a></div>
+        {% endfor %}
+        <div class="mb-3">
+          <label class="form-label">First Name</label>
+          <input name="first_name" class="form-control" placeholder="First Name" value="{{user.first_name}}">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Last Name</label>
+          <input name="last_name" class="form-control" placeholder="Last Name" value="{{user.last_name}}">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input name="username" class="form-control" placeholder="Username" value="{{user.username}}">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <input name="email" class="form-control" placeholder="Email" value="{{user.email}}">
+        </div>
+        <div class="form-footer">
+          <button class="btn btn-primary btn-block" type="submit">Update My User</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

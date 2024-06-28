@@ -1,0 +1,35 @@
+{% load static %}
+{% load sass_tags %}
+<div class="col-xl-8">
+  <form class="card needs-validation" method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="update_what" value="COMPANY"/>
+    <div class="card-header pb-0">
+      <h4 class="card-title mb-0">Company Profile</h4>
+
+      {% for field, error in profile_company_form.errors.items %}
+        <div class="alert alert-danger outline alert-dismissible fade show" role="alert">
+            <p>{{field|upper}} {{error.as_text}}</p>
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="card-options"><a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i
+          class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i
+          class="fe fe-x"></i></a></div>
+      {% endfor %}
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input name="name" class="form-control" type="text" placeholder="Company" value="{{user.profile.account.name}}"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-end pt-0">
+      <button class="btn btn-primary" type="submit">Update My Company</button>
+    </div>
+  </form>
+  <!-- Container-fluid Ends-->
+</div>

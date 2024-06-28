@@ -25,9 +25,10 @@ urlpatterns = [
     path('dashboard', dashboard, name='dashboard'),
     path('adminsite/', admin.site.urls),
     path('users/', include('django.contrib.auth.urls')),
-    path('accounts/', include('accounts.urls')),
-    path('social/', include('social.urls')),
     path('login/', login_user, name='login'),
     path('logout/', logout_user, name='logout'),
-    path('signup/', signup_user, name='signup')
+    path('signup/', signup_user, name='signup'),
+    path('accounts/', include('accounts.urls')),
+    path('inventory/', include('inventory.urls'), name='inventory'),
+    path('social/', include('social.urls'))
 ]

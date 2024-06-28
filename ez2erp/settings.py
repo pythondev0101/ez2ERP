@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'sass_processor',
     'accounts',
-    'social'
+    'social',
+    'inventory'
 ]
 
 MIDDLEWARE = [
@@ -65,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'ez2erp.contexts.app_name'
             ],
         },
     },
@@ -82,12 +85,13 @@ WSGI_APPLICATION = 'ez2erp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# TODO: Move
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ez2erpdb',
-        'USER': 'root',
-        'PASSWORD': 'dbpassword',
+        'NAME': 'db_test',
+        'USER': 'db_user',
+        'PASSWORD': 'db_password',
         'HOST':'localhost',
         'PORT':''
     }
@@ -126,7 +130,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
@@ -140,3 +143,5 @@ SASS_PROCESSOR_ROOT = BASE_DIR / 'static'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = '/login'

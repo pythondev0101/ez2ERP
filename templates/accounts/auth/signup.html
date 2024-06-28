@@ -17,7 +17,7 @@
           <form class="theme-form login-form" method="post">
             <div class="login-header text-center">
               <h4>Create your account</h4>
-              <h6>Enter your personal details to create account</h6>
+              <h6>Enter your personal and business details to create account</h6>
               {% for message in messages %}
                 {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
                 <div class="alert alert-success inverse alert-dismissible fade show" role="alert"><i
@@ -39,11 +39,17 @@
               <label>Your Name</label>
               <div class="small-group">
                 <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
-                  <input name="fname" class="form-control" type="text" required="" placeholder="Fist Name">
+                  <input name="fname" class="form-control" type="text" required="" placeholder="First Name">
                 </div>
                 <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
                   <input name="lname" class="form-control" type="text" required="" placeholder="Last Name">
                 </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Business Name</label>
+              <div class="input-group"><span class="input-group-text"><i class="icon-home"></i></span>
+                <input name="business_name" class="form-control" type="text" required="" placeholder="">
               </div>
             </div>
             <div class="form-group">

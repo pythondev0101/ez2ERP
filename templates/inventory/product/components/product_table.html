@@ -1,0 +1,207 @@
+{% load static %}
+{% load sass_tags %}
+<div class="container-fluid list-products">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive product-table">
+            <table class="display" id="basic-1">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Details</th>
+                  <th>Amount</th>
+                  <th>Stock</th>
+                  <th>Start date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-1.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> Red Lipstick </h6>
+                    </a><span>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</span></td>
+                  <td>$10</td>
+                  <td class="font-success">In Stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-primary btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-2.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> Pink Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-primary">Low Stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-3.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> Gray Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-danger">out of stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-4.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> Green Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-primary">Low Stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-5.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> Black Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-success">In Stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-6.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> White Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-primary">Low Stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-1.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> light Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-danger">out of stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-2.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> Gliter Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-danger">out of stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-3.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> green Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-success">In Stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="/ecommerce_product_page"><img
+                        src="{% static 'assets/images/ecommerce/product-table-4.png' %}" alt=""></a></td>
+                  <td><a href="/ecommerce_product_page">
+                      <h6> Yellow Lipstick </h6>
+                    </a>
+                    <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                  </td>
+                  <td>$10</td>
+                  <td class="font-danger">out of stock</td>
+                  <td>2011/04/25</td>
+                  <td>
+                    <button class="btn btn-danger btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Delete</button>
+                    <button class="btn btn-success btn-xs" type="button" data-original-title="btn btn-danger btn-xs"
+                      title="">Edit</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Individual column searching (text inputs) Ends-->
+  </div>
+</div>
